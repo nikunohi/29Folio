@@ -1,0 +1,50 @@
+/* Import Google Fonts and Typekit */
+@import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
+@import url('https://use.typekit.net/uay0xwi.css');
+
+/* Global Styles */
+body {
+    background-color: rgb(31, 179, 179);
+    font-family: 'Inter', sans-serif;
+}
+
+/* Apply custom cursor to all elements */
+body {
+    cursor: url('https://example.com/path-to-your-image/custom-cursor.png'), auto;
+}
+
+/* Or apply custom cursor to specific elements only */
+.element {
+    cursor: url('https://example.com/path-to-your-image/custom-cursor.png'), auto;
+}
+
+/* Style for h1 and paragraphs */
+h1 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32px;
+    line-height: 1;
+    color: black;
+    letter-spacing: -2px;
+}
+
+p {
+    font-size: 16px;
+    line-height: 1.5;
+    color: #333;
+}
+
+a {
+    color: #007bff;
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+img {
+    width: 100%;
+    max-width: 500px;
+    height: auto;
+    margin-top: 20px;
+}
