@@ -1,0 +1,103 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sean Yagi</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="alphiecursor.png" type="image/x-icon">
+    <style>
+        
+        body {
+            margin: 0; 
+            padding: 0; 
+            cursor: url('alphiecursor.cur'), auto; 
+        }
+
+        .container {
+            position: relative;
+            margin-top: 400px; 
+            width: 80%; 
+            max-width: 970px; 
+        }
+
+        .box {
+            height: 20px; 
+            background-color: #ff0000;
+            position: relative;
+            z-index: 1; 
+        }
+
+        .text-over-box {
+            position: absolute;
+            top: -40px; 
+            left: 0; 
+            font-size: 64px; 
+            color: #000000;
+            font-family: 'Inter', sans-serif;
+            font-weight: 500;
+            letter-spacing: -0.07em;
+            z-index: 2; 
+        }
+
+        p {
+            margin-top: 100vh; 
+            font-size: 18px;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        
+        .visual-section {
+            text-align: center;
+            font-size: 24px;
+            margin-top: 50px;
+        }
+
+        
+        .description {
+            text-align: right;
+            padding-top: 150px; 
+        }
+
+        @media (max-width: 600px) {
+            .box {
+                height: 20px; 
+            }
+
+            .text-over-box {
+                font-size: 1.2rem; 
+                top: -20px; 
+            }
+
+            
+            p {
+                margin-top: 50vh;
+                font-size: 1rem;
+            }
+
+            
+            .visual-section {
+                font-size: 1.2rem;
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <div class="box"></div>
+        <div class="text-over-box">by: SEAN YAGI</div>
+    </div>
+    <p>for:FUN<br>for:WORK<br>more:ABOUT<br><a href="grid.html">grid</a></p>
+</p>
+
+    <div class="visual-section">
+       <p>motion / graphic <strong>VISUAL.</strong></p> 
+    </div>
+
+    <div class="description">
+        Sean Yagi is a <strong><em>graphic and motion designer</em></strong> residing in the Bay Area. They are currently a student at San Jose State University.
+    </div>
+</body>
+</html>

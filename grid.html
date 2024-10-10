@@ -1,0 +1,97 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Responsive Grid Layout (1920x1080)</title>
+    <style>
+        /* Base styles for body */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Inter', sans-serif;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            height: 100vh;
+            background-color: #f0f0f0;
+        }
+
+        /* Grid container */
+        .grid-container {
+            display: grid;
+            width: 1920px;   /* Explicit width */
+            height: 1080px;  /* Explicit height */
+            grid-template-columns: repeat(4, 1fr); /* 4 equal-width columns */
+            grid-template-rows: repeat(6, 1fr);    /* 6 equal-height rows */
+            gap: 20px; /* 20px gutters in both directions */
+            background-color: #ffffff;
+            padding: 10px; /* Optional padding to frame the grid */
+            box-sizing: border-box; /* Ensure padding is included in width/height */
+        }
+
+        /* Grid item styling */
+        .grid-item {
+            background-color: #f4f4f4;
+            border: 1px solid #ddd;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+            font-size: 20px;
+            color: #333;
+        }
+
+        /* Ensure grid scales down responsively on smaller screens */
+        @media (max-width: 1920px) {
+            .grid-container {
+                width: 100vw;
+                height: 56.25vw; /* Keep 16:9 aspect ratio */
+            }
+        }
+
+        /* Responsive breakpoints for mobile views */
+        @media (max-width: 800px) {
+            .grid-container {
+                grid-template-columns: repeat(2, 1fr); /* Switch to 2 columns for smaller screens */
+                grid-template-rows: auto; /* Adjust rows based on content */
+            }
+        }
+
+        @media (max-width: 500px) {
+            .grid-container {
+                grid-template-columns: 1fr; /* Single column layout for very small screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="grid-container">
+        <!-- Grid items -->
+        <div class="grid-item">1</div>
+        <div class="grid-item">2</div>
+        <div class="grid-item">3</div>
+        <div class="grid-item">4</div>
+        <div class="grid-item">5</div>
+        <div class="grid-item">6</div>
+        <div class="grid-item">7</div>
+        <div class="grid-item">8</div>
+        <div class="grid-item">9</div>
+        <div class="grid-item">10</div>
+        <div class="grid-item">11</div>
+        <div class="grid-item">12</div>
+        <div class="grid-item">13</div>
+        <div class="grid-item">14</div>
+        <div class="grid-item">15</div>
+        <div class="grid-item">16</div>
+        <div class="grid-item">17</div>
+        <div class="grid-item">18</div>
+        <div class="grid-item">design portfolio</div>
+        <div class="grid-item">20</div>
+        <div class="grid-item">21</div>
+        <div class="grid-item">22</div>
+        <div class="grid-item">23</div>
+        <div class="grid-item">24</div>
+    </div>
+</body>
+</html>
+

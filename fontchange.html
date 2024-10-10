@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Font Change Animation</title>
+    <!-- Link to Google Fonts for both serif and sans-serif fonts -->
+    <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@1,400&family=Playfair+Display:wght@400&display=swap" rel="stylesheet">
+    <style>
+        /* Initial body style with italic sans-serif font */
+        body {
+            margin: 0;
+            padding: 0;
+            font-family: 'Roboto', sans-serif; /* Initial sans-serif font */
+            font-style: italic; /* Italic style */
+            transition: font-family 1.5s ease, font-style 1.5s ease; /* Animate font-family and font-style */
+        }
+
+        /* Class to switch to the regular serif font */
+        .font-change {
+            font-family: 'Playfair Display', serif; /* New serif font */
+            font-style: normal; /* Remove italic */
+        }
+    </style>
+</head>
+<body>
+    <h1>Font Change Animation</h1>
+    <p>This text will change from an italic sans-serif to a regular serif font after 1 second.</p>
+
+    <script>
+        // JavaScript to trigger the font change 1 second after the page loads
+        window.onload = function() {
+            setTimeout(function() {
+                document.body.classList.add('font-change'); // Switch to the serif font and remove italic
+            }, 1000); // Delay font change by 1 second
+        };
+    </script>
+</body>
+</html>

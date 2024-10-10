@@ -1,0 +1,151 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>about.txt</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="PCLOGO.png" type="image/x-icon">
+        <meta charset="UTF-8">
+       
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+       
+        .frame {
+            position: relative;
+            width: 100vw;   
+            height: 56.25vw; 
+            max-width: 1920px;
+            max-height: 1080px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+       
+        .pinned-embed {
+            position: fixed;
+            top: calc(10/ 1080 * 100%);
+            left: calc(150 / 1920 * 100%);
+          
+            width:10%;
+            z-index: 100;
+ }
+        
+        .text-box {
+            position: fixed;
+            left: calc(297 / 1920 * 100%);  
+            top: calc(94.46 / 1080 * 100%);  
+            padding: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: magenta;
+            border-radius: 120px;
+            max-width: auto; 
+        }
+       
+        .text-box-bottom-right {
+            position: fixed;
+            bottom: 0; 
+            right: 0; 
+            width: 950px; 
+            height: 347px; 
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: #333;
+            box-sizing: border-box; 
+            text-align: right;
+        }
+
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            width: 20%;
+            min-width: 150px; 
+        }
+
+       
+        @media (max-width: 1920px) {
+            .frame {
+                width: 100vw;
+                height: 56.25vw; 
+            }
+
+            .text-box {
+                left: calc(297 / 1920 * 100%);  
+                top: calc(94.46 / 1080 * 100%);  
+            }
+
+            .text-box-bottom-right {
+                width: calc(950 / 1920 * 100%); 
+                height: calc(347 / 1080 * 100%); 
+            }
+        }
+
+        @media (max-width: 600px) {
+            .text-box {
+                font-size: 14px; 
+            }
+
+            .text-box-bottom-right {
+                font-size: 14px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" title="home">
+        <img src="busycooking1.png" class=pinned-embed>
+
+
+    </a> 
+    <div class="frame">
+       
+        <div class="text-box">
+            <a href="moreABOUT.html" title="more:ABOUT">
+           <h2 style="color:#ffffff">more:ABOUT > about.txt</h2> 
+        </a>
+        </div>
+        
+       
+        <div class="image-container">
+            <h3>
+            >Sean Yagi is a <strong><em>graphic and motion designer</em></strong> residing in the Bay Area.<br>
+            >They are currently a student at <strong> San Jose State University. </strong> <br>
+            >They are currently interning at the SJSU<Strong> Humanities and Arts Marketing Team </strong>.
+            </h3>
+        </div>
+
+        <div class="text-box-bottom-right">
+           <h2 style="line-height: .7;">about.txt</h2><br>
+           <h3 style="line-height: .1;"><strong>??? / ??? / ???</strong> |</h3><br>
+           <h3>**** *** **** ********** ******* | <br> **** *** ****** ******** ******** | <br> **** ********** ********* |</h3>
+        </div>
+    </div>
+</body>
+</html>

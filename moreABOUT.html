@@ -1,0 +1,110 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>more:ABOUT</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="icon" href="PCLOGO.png" type="image/x-icon">
+    <style>
+        
+        body {
+            margin: 0; 
+            padding: 0; 
+            cursor: url('alphiecursor.cur'), auto; 
+        }
+        h4{
+            font-family: "hydrophilia-iced";
+            font-weight: 400;
+            font-style: normal;
+            color: black;
+            font-size: 2.5rem;
+        }
+        a{
+            text-decoration: none;
+        }
+        p {
+            margin-top: 100vh; 
+            font-size: 18px;
+            font-family: 'Inter', sans-serif;
+            line-height: 1.6;
+            max-width: 800px;
+        }
+
+        .frame {
+            position: relative;
+            width: 100vw;   
+            height: 56.25vw; 
+            max-width: 1920px;
+            max-height: 1080px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+        .pinned-embed {
+            position: fixed;
+            top: calc(10/ 1080 * 100%);
+            left: calc(150 / 1920 * 100%);
+          
+            width:10%;
+            z-index: 100;
+ }
+ .text-box {
+            position: fixed;
+            left: calc(297 / 1920 * 100%);  
+            top: calc(94.46 / 1080 * 100%);  
+            padding: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: magenta;
+            border-radius: 120px;
+            max-width: 300px; 
+        }
+        .direct{
+            position: fixed;
+            left: calc(297 / 1920 * 100%);  
+            top: calc(194 / 1080 * 100%);
+            padding: 10px;
+            z-index: 101;
+            background-color: transparent; 
+            text-decoration: none;
+        }
+
+        .direct1{
+            position: fixed;
+            left: calc(297 / 1920 * 100%);  
+            top: calc(344 / 1080 * 100%);
+            padding: 10px;
+            z-index: 101;
+            background-color: transparent; 
+            text-decoration: none;
+        }
+        
+    </style>
+</head>
+<body>
+    <a href="index.html" title="home">
+        <img src="busycooking1.png" class="pinned-embed">
+
+
+    </a> 
+    <div class="frame">
+       
+        <div class="text-box">
+           <h2 style="color:#ffffff">more:ABOUT</h2> 
+        </div>
+        
+        <div class= "direct">
+            <a href="about.html" title="about.txt" style="display: flex; align-items: center;">
+                <img src="TXTLOGO.png" style="width: 3%; margin-right: 3px;">
+                <h4 style="margin: 0;"> about.txt</h4>
+            </a> 
+        </div>
+
+        <div class= "direct1">
+            <a href="artist-statement.html" title="artist-statement.txt" style="display: flex; align-items: center;">
+                <img src="TXTLOGO.png" style="width: 3%; margin-right: 3px;">
+                <h4 style="margin: 0;"> artist-statement.txt</h4>
+            </a> 
+        </div>

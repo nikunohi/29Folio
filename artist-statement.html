@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>artist-statement.txt</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="PCLOGO.png" type="image/x-icon">
+        <meta charset="UTF-8">
+       
+    <style>
+        
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+       
+        .frame {
+            position: relative;
+            width: 100vw;   
+            height: 56.25vw; 
+            max-width: 1920px;
+            max-height: 1080px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+       
+        .pinned-embed {
+            position: fixed;
+            top: calc(10/ 1080 * 100%);
+            left: calc(150 / 1920 * 100%);
+          
+            width:10%;
+            z-index: 100;
+ }
+        
+        .text-box {
+            position: fixed;
+            left: calc(297 / 1920 * 100%);  
+            top: calc(94.46 / 1080 * 100%);  
+            padding: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: #ffffff;
+            background-color: magenta;
+            border-radius: 120px;
+            max-width: auto; 
+        }
+       
+        .text-box-bottom-right {
+            position: fixed;
+            bottom: 0; 
+            right: 0; 
+            width: 950px; 
+            height: 347px; 
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: #333;
+            box-sizing: border-box; 
+            text-align: right;
+        }
+
+        
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            width: 20%;
+            min-width: 150px; 
+        }
+
+       
+        @media (max-width: 1920px) {
+            .frame {
+                width: 100vw;
+                height: 56.25vw; 
+            }
+
+            .text-box {
+                left: calc(297 / 1920 * 100%);  
+                top: calc(94.46 / 1080 * 100%);  
+            }
+
+            .text-box-bottom-right {
+                width: calc(950 / 1920 * 100%); 
+                height: calc(347 / 1080 * 100%); 
+            }
+        }
+
+        @media (max-width: 600px) {
+            .text-box {
+                font-size: 14px; 
+            }
+
+            .text-box-bottom-right {
+                font-size: 14px; 
+            }
+        }
+    </style>
+</head>
+<body>
+    <a href="index.html" title="home">
+        <img src="busycooking1.png" class="pinned-embed">
+
+
+    </a> 
+    <div class="frame">
+       
+        <div class="text-box">
+            <a href="moreABOUT.html" title="more:ABOUT">
+           <h2 style="color:#ffffff">more:ABOUT > artist-statement.txt</h2> 
+        </a>
+        </div>
+        
+       
+        <div class="image-container" style="max-width: 300px; padding-top: 200px; padding-bottom: 200px; margin: 0 auto; text-align: left; line-height: 1.5;">
+            <h3>
+                >From ages five to 18, I spent Saturdays at a weekend school cramming lessons on Japanese literature, mathematics, and society into my yet-to-develop brain. During one of these countless dreary Saturdays, I remember feeling especially dejected as the rest of the third-graders were hushedly discussing the latest episode of One Piece. As soon as I got home that day, I hopped on the family computer and embarked upon the world of Japanese animation. 12 years later, as a budding graphic designer, my portfolio shows the warpath that Eastern animation carved through my work. <strong>My design work combines my experience with sakuga, or eastern frame-by-frame animation, with aesthetic decisions like strong lines, contrasting shapes, and bright colors to create a sense of movement and dynamism in an otherwise static medium.</strong><br>
+                <br>
+                >As I began to appreciate the nuances of animation, I moved on to shows with bolder action and higher budgets, like Mob Psycho 100. Simultaneously, I started designing and began to think of how perspective and lighting could be expressed by simply varying the thickness or color of a stroke. This obsession and influence would stick. Many of the compositions and forms I choose today are made as striking as possible while preserving the simplicity of the design. Dynamic angles, bold and erratic lines, and bright colors portray motion in a frozen medium. As I realize now, these decisions are subconsciously referencing my obsession. As obvious as it seems, these comparisons also unknowingly revealed how intertwined graphic design was with any visual medium, whether static or dynamic. <br>
+                <br>
+                >Nowadays, as a part of my process, <strong>I imagine how the piece I’m working on could be part of a greater motion sequence. How can I convey the feeling of suspended time and action in a single frame?</strong> Through this deliberation, I am perpetually reminded of how these shows captivated me as a wide-eyed pupil watching anime for the first time; the rough and raw action that could ensnare me at any frame. <br>
+
+
+            </h3>
+        </div>
+        
+        <div class="text-box-bottom-right">
+           <h2 style="line-height: .7;">artist-statement.txt</h2><br>
+           <h3 style="line-height: .1;"><strong>??? / ??? / ???</strong> |</h3><br>
+           <h3>**** *** **** ********** ******* | <br> **** *** ****** ******** ******** | <br> **** ********** ********* |</h3>
+        </div>
+    </div>
+</body>
+</html>

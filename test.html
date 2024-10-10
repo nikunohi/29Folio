@@ -1,0 +1,131 @@
+<!DOCTYPE html>
+<html lang="en">
+    <head>
+        <title>Percussion Studio Logo Redesign</title>
+        <link rel="stylesheet" href="style.css">
+        <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="icon" href="alphiecursor.png" type="image/x-icon">
+        <meta charset="UTF-8">
+       
+    <style>
+        /* Basic reset */
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            margin: 0;
+            padding: 0;
+            height: 100vh;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            background-color: #f0f0f0;
+        }
+
+        /* Container to hold 1920x1080 frame */
+        .frame {
+            position: relative;
+            width: 100vw;   /* Responsive full width */
+            height: 56.25vw; /* 16:9 aspect ratio (1080 / 1920 * 100) */
+            max-width: 1920px;
+            max-height: 1080px;
+            display: flex;
+            flex-direction: column;
+            justify-content: space-between;
+        }
+
+        /* Text box positioned at x:297px and y:94.46px on a 1920x1080 frame */
+        .text-box {
+            position: absolute;
+            left: calc(297 / 1920 * 100%);  /* Convert X-position to percentage for responsiveness */
+            top: calc(94.46 / 1080 * 100%);  /* Convert Y-position to percentage for responsiveness */
+            padding: 10px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: #333;
+            max-width: 300px; /* Optional fixed width */
+        }
+       
+        .text-box-bottom-right {
+            position: absolute;
+            bottom: 0; /* Pin to the bottom */
+            right: 0; /* Pin to the right */
+            width: 950px; /* Fixed width */
+            height: 347px; /* Fixed height */
+            padding: 20px;
+            font-family: 'Inter', sans-serif;
+            font-size: 18px;
+            color: #333;
+            box-sizing: border-box; /* Include padding in the size */
+            text-align: right;
+        }
+
+        /* Flexbox container for the images */
+        .image-container {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            gap: 20px;
+            width: 100%;
+            height: 100%;
+            flex-wrap: wrap;
+        }
+
+        .image-container img {
+            width: 20%;
+            min-width: 150px; /* Minimum size for smaller screens */
+        }
+
+        /* Responsive styles for smaller screens */
+        @media (max-width: 1920px) {
+            .frame {
+                width: 100vw;
+                height: 56.25vw; /* Maintain aspect ratio */
+            }
+
+            .text-box {
+                left: calc(297 / 1920 * 100%);  /* Convert X-position to percentage */
+                top: calc(94.46 / 1080 * 100%);  /* Convert Y-position to percentage */
+            }
+
+            .text-box-bottom-right {
+                width: calc(950 / 1920 * 100%); /* Responsive width */
+                height: calc(347 / 1080 * 100%); /* Responsive height */
+            }
+        }
+
+        @media (max-width: 600px) {
+            .text-box {
+                font-size: 14px; /* Adjust font size for smaller screens */
+            }
+
+            .text-box-bottom-right {
+                font-size: 14px; /* Adjust font size for smaller screens */
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="frame">
+        <!-- Text box element -->
+        <div class="text-box">
+           <h2>for:WORK</h2> 
+        </div>
+        
+        <!-- Image container -->
+        <div class="image-container">
+            <img src="Artboard 2@2x.png" alt="Artboard 2">
+            <img src="Artboard 3@2x.png" alt="Artboard 3">
+        </div>
+
+        <div class="text-box-bottom-right">
+           <h2 style="line-height: .7;">percussion-studio-redesign</h2><br>
+           <h3 style="line-height: .1;"><strong>logo / digital / concept</strong> |</h3><br>
+           <h3>Logo for SJSU percussion studio. | <br> Used for studio Instagram account. | <br> Logo signatures included. |</h3>
+        </div>
+    </div>
+</body>
+</html>

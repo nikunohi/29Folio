@@ -1,36 +1,64 @@
-/* Import Google Fonts and Typekit */
+
 @import url('https://fonts.googleapis.com/css2?family=Inter:ital,opsz,wght@0,14..32,100..900;1,14..32,100..900&display=swap');
 @import url('https://use.typekit.net/uay0xwi.css');
+@import url("https://use.typekit.net/eoq6mjt.css");
 
-/* Global Styles */
 body {
-    background-color: rgb(31, 179, 179);
+    background-color: rgb(253, 249, 226);
     font-family: 'Inter', sans-serif;
+    cursor: url(alphiecursor.cur), auto;
+    
 }
 
-/* Apply custom cursor to all elements */
-body {
-    cursor: url('https://example.com/path-to-your-image/custom-cursor.png'), auto;
-}
+a:hover {
+    cursor: url('cursorhover.png') 10 10, auto;
+    text-decoration: underline;
 
-/* Or apply custom cursor to specific elements only */
+  }
+  
+
 .element {
-    cursor: url('https://example.com/path-to-your-image/custom-cursor.png'), auto;
+    cursor: url('alphiecursor.cur'), auto;
 }
 
-/* Style for h1 and paragraphs */
+
+
 h1 {
     font-family: 'Inter', sans-serif;
-    font-size: 32px;
+    font-size: 64px;
+    font-weight: 500;
     line-height: 1;
+    margin: 0;
     color: black;
-    letter-spacing: -2px;
+    letter-spacing: -0.07em;
+}
+h2 {
+    font-family: 'Inter', sans-serif;
+    font-size: 32pt;
+    font-weight: 500;
+    line-height: 1;
+    margin: 0;
+    color: black;
+    letter-spacing: -.07em;
+}
+h3 {
+    font-family: 'Inter', sans-serif;
+    font-size: 12pt;
+    font-weight: 500;
+    line-height: -.07em;
+    margin: 0;
+    color: black;
+    letter-spacing: -.07em;
 }
 
+
 p {
-    font-size: 16px;
+    font-family: 'neue-haas-grotesk-text', sans-serif;
+    font-weight: 400;
+    font-style:normal;
+    font-size:15px;
     line-height: 1.5;
-    color: #333;
+    color: #000000;
 }
 
 a {
@@ -38,13 +66,16 @@ a {
     text-decoration: none;
 }
 
-a:hover {
-    text-decoration: underline;
-}
+@media only screen and (max-width: 600px) {
+    body {
+      font-size: 14px;
+    }
+  }
 
 img {
     width: 100%;
-    max-width: 500px;
+    max-width: 100%;
     height: auto;
     margin-top: 20px;
 }
+
